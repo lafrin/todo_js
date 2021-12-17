@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>todo list</title>
 </head>
 <body>
   <h1>Todo List -JavaScript-</h1>
 
   <form action="post">
-    <input type="text">
-    <button>追加</button>
+    <input id="add_value" type="text" value="test message">
+    <button id="add_task">追加</button>
   </form>
 
-  <div id="todo_list">
-  
+  <div id="table">
+    <h3 class="task_header">タスク一覧</h3>
+    <ul id="task_list"></ul>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
