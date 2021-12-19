@@ -49,7 +49,8 @@ const createAndAddListInnerElement = (li, ele, classNames, value) => {
 const deleteTask = (deleteButton) => {
   if( !confirm('削除しますか？') ) return
   const chosenTask = deleteButton.closest('li')
-  taskList.removeChild(chosenTask)
+  const chosenTaskList = chosenTask.closest('ul')
+  chosenTaskList.removeChild(chosenTask)
 }
 
 addTaskBtn.addEventListener('click', evt => {
